@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:popupTheme="@style/Theme.Proyecto_Integrado">
+    <item
+        android:id="@+id/localizacionCliente"
+        android:title="Localización" />
+    <item
+        android:id="@+id/datosCliente"
+        android:title="Mis datos" />
+    <item
+        android:id="@+id/salirCliente"
+        android:title="Salir" />
+    <item
+        android:id="@+id/main"
+        android:title="Main"
+        android:icon="@drawable/pngwing_com"
+        app:showAsAction="ifRoom"/>
+
+</menu>

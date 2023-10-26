@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F6381"
+    tools:context=".Repartidor.MisDatosRepartidor">
+
+    <ImageView
+        android:id="@+id/imageViewFondo12"
+        android:layout_width="386dp"
+        android:layout_height="349dp"
+        android:background="#90C3DA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272"
+        app:srcCompat="@drawable/cuadrado_radius" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorMisDatosApellidosText"
+        android:layout_width="238dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewRepartidorMisDatosApellidos"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepartidorMisDatosNombreText" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorMisDatosTelefonoText"
+        android:layout_width="238dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewRepartidorMisDatosTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepartidorMisDatosApellidosText" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorMisDatosEmailText"
+        android:layout_width="238dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewRepartidorMisDatosEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepartidorMisDatosTelefonoText" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorMisDatosDniText"
+        android:layout_width="238dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewRepartidorMisDatosDni"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepartidorMisDatosEmailText" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorMisDatosContraseñaText"
+        android:layout_width="238dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepartidorMisDatosDniText" />
+
+    <Button
+        android:id="@+id/buttonVolverMisDatosRepartidor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="152dp"
+        android:backgroundTint="#90C3DA"
+        android:fontFamily="@font/montserrat_medium"
+        android:foregroundTint="#040101"
+        android:onClick="volver"
+        android:text="Volver"
+        android:textColor="#000000"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFondo12" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorMisDatosTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="300dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Teléfono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepartidorMisDatosApellidos" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorMisDatosDni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="336dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Dni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepartidorMisDatosEmail" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorMisDatosContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="280dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Contraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepartidorMisDatosDni" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorMisDatosNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="304dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFondo12" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorMisDatosEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="320dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepartidorMisDatosTelefono" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorMisDatosApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="296dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Apellidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepartidorMisDatosNombre" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorMisDatosTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="292dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Mis datos:"
+        android:textColor="#FAFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewFondo12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.328" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorMisDatosNombreText"
+        android:layout_width="238dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewRepartidorMisDatosNombre"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFondo12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

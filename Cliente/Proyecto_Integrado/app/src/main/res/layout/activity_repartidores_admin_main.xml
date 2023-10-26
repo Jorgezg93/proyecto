@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F6381"
+    tools:context=".Admin.RepartidoresAdminMain">
+
+    <Button
+        android:id="@+id/buttonCrearEnvio2"
+        android:layout_width="126dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#90C3DA"
+        android:fontFamily="@font/montserrat_medium"
+        android:foregroundTint="#040101"
+        android:onClick="nuevoRepar"
+        android:text="Registrar Repartidor"
+        android:textColor="#000000"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdminReparBuscar" />
+
+    <Button
+        android:id="@+id/buttonAdminReparBuscar"
+        android:layout_width="216dp"
+        android:layout_height="55dp"
+        android:background="#90C3DA"
+        android:backgroundTint="#90C3DA"
+        android:fontFamily="@font/montserrat_medium"
+        android:foregroundTint="#040101"
+        android:onClick="accederPorId"
+        android:text="Acceder por ID"
+        android:textColor="#000000"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <TextView
+        android:id="@+id/textViewReparAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Id"
+        android:textColor="#F3EEEE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSoporteAdminMain2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <ImageView
+        android:id="@+id/imageViewFondo6"
+        android:layout_width="388dp"
+        android:layout_height="410dp"
+        android:background="#90C3DA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCrearEnvio2"
+        app:layout_constraintVertical_bias="0.887"
+        app:srcCompat="@drawable/cuadrado_radius" />
+
+    <TextView
+        android:id="@+id/textViewBuscarReparAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Repartidores"
+        android:textColor="#F3EEEE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="373dp"
+        android:layout_height="387dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFondo6"
+        app:layout_constraintVertical_bias="0.567">
+
+        <LinearLayout
+            android:id="@+id/RepartidoresLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Spinner
+        android:id="@+id/spinnerRepartidorId"
+        android:layout_width="338dp"
+        android:layout_height="47dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

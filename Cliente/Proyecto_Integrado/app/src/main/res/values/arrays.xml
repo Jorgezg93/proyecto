@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_items">
+        <item>Gestión de envíos</item>
+        <item>Gestión de repartidores</item>
+        <item>Gestión de clientes</item>
+        <item>Localización</item>
+        <item>Mis datos</item>
+        <item>Salir</item>
+    </string-array>
+</resources>

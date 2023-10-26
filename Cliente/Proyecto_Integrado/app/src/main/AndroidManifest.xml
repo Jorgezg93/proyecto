@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- Include only if your app benefits from precise location access. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Package Tracker"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Proyecto_Integrado"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Admin.RepartidoresAdminCrear"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.EnviosAdminCrear"
+            android:exported="false"
+            android:parentActivityName=".Admin.EnviosAdminMain" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Cliente.MisDatosCliente"
+            android:exported="false"
+            android:parentActivityName=".Cliente.ClienteMain" />
+        <activity
+            android:name=".Cliente.EnviosCliente"
+            android:exported="false"
+            android:parentActivityName=".Cliente.ClienteMain" />
+        <activity
+            android:name=".Cliente.ClienteMain"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Repartidor.LocalizacionRepartidorMain"
+            android:exported="false"
+            android:parentActivityName=".Repartidor.MainRepartidor"/>
+        <activity
+            android:name=".Repartidor.MisDatosRepartidor"
+            android:exported="false"
+            android:parentActivityName=".Repartidor.MainRepartidor" />
+        <activity
+            android:name=".Repartidor.EnviosRepartidorEdit"
+            android:exported="false"
+            android:parentActivityName=".Repartidor.EnviosRepartidorMain" />
+        <activity
+            android:name=".Repartidor.EnviosRepartidorMain"
+            android:exported="false"
+            android:parentActivityName=".Repartidor.MainRepartidor" />
+        <activity
+            android:name=".Repartidor.MainRepartidor"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.MisDatosAdmin"
+            android:exported="false"
+            android:parentActivityName=".Admin.MainAdmin" />
+        <activity
+            android:name=".Admin.ClientesAdminEdit"
+            android:exported="false"
+            android:parentActivityName=".Admin.ClientesAdminMain" />
+        <activity
+            android:name=".Admin.ClientesAdminMain"
+            android:exported="false"
+            android:parentActivityName=".Admin.MainAdmin" />
+        <activity
+            android:name=".Admin.RepartidoresAdminEdit"
+            android:exported="false"
+            android:parentActivityName=".Admin.RepartidoresAdminMain" />
+        <activity
+            android:name=".Admin.RepartidoresAdminMain"
+            android:exported="false"
+            android:parentActivityName=".Admin.MainAdmin" />
+        <activity
+            android:name=".Admin.EnviosAdminEdit"
+            android:exported="false"
+            android:parentActivityName=".Admin.EnviosAdminMain" />
+        <activity
+            android:name=".Admin.EnviosAdminMain"
+            android:exported="false"
+            android:parentActivityName=".Admin.MainAdmin" />
+        <activity
+            android:name=".Admin.MainAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
+            android:exported="false"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F6381"
+    tools:context=".Admin.EnviosAdminMain">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="75dp"
+        android:layout_height="33dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Filtros"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="393dp"
+        android:layout_height="71dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048">
+
+        <RadioButton
+            android:id="@+id/radioButtonCliente"
+            android:layout_width="122dp"
+            android:layout_height="71dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Cliente"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#F4F4F4"
+            android:textColorHint="#FBFAFA"
+            android:textColorLink="#F8F8F8" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEstado"
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Estado"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#F4F4F4"
+            android:textColorHint="#FBFAFA"
+            android:textColorLink="#F8F8F8" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRepartidor"
+            android:layout_width="131dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Repartidor"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#F4F4F4"
+            android:textColorHint="#FBFAFA"
+            android:textColorLink="#F8F8F8" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonBuscar"
+        android:layout_width="109dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#90C3DA"
+        android:fontFamily="@font/montserrat_medium"
+        android:foregroundTint="#040101"
+        android:onClick="buscarEnvios"
+        android:text="Buscar"
+        android:textColor="#000000"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonCrearEnvio"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRepartidor" />
+
+    <Button
+        android:id="@+id/buttonCrearEnvio"
+        android:layout_width="109dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#90C3DA"
+        android:fontFamily="@font/montserrat_medium"
+        android:foregroundTint="#040101"
+        android:onClick="crearEnvio"
+        android:text="Crear Envío"
+        android:textColor="#000000"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRepartidor" />
+
+    <ImageView
+        android:id="@+id/imageViewFondo"
+        android:layout_width="377dp"
+        android:layout_height="318dp"
+        android:background="#90C3DA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCrearEnvio"
+        app:layout_constraintVertical_bias="0.928"
+        app:srcCompat="@drawable/cuadrado_radius" />
+
+    <Spinner
+        android:id="@+id/spinnerEstado"
+        android:layout_width="228dp"
+        android:layout_height="33dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toEndOf="@+id/textViewEstado"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <Spinner
+        android:id="@+id/spinnerCliente"
+        android:layout_width="228dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textViewCliente"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerEstado" />
+
+    <TextView
+        android:id="@+id/textViewEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="260dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Estado del envío"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textViewCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="324dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Cliente"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstado" />
+
+    <TextView
+        android:id="@+id/textViewRepartidor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="296dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Repartidor"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCliente" />
+
+    <Spinner
+        android:id="@+id/spinnerRepartidor"
+        android:layout_width="228dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textViewRepartidor"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCliente" />
+
+    <ScrollView
+        android:id="@+id/scrollView6"
+        android:layout_width="379dp"
+        android:layout_height="273dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFondo"
+        app:layout_constraintVertical_bias="0.428">
+
+        <LinearLayout
+            android:id="@+id/EnviosAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

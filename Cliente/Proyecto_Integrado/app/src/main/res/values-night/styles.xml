@@ -1,0 +1,11 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Otros atributos y estilos de tu tema -->
+        <item name="android:colorPrimary">@color/main</item>
+        <item name="android:colorPrimaryDark">@color/main</item>
+        <item name="android:color">@color/main</item>
+    </style>
+    <style name="MenuTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textColor">@color/main</item>
+    </style>
+</resources>

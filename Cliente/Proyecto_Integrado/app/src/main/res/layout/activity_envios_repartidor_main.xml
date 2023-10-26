@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F6381"
+    tools:context=".Repartidor.EnviosRepartidorMain">
+
+    <ImageView
+        android:id="@+id/imageViewFondo10"
+        android:layout_width="390dp"
+        android:layout_height="395dp"
+        android:background="#90C3DA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBuscarEnviosRepartidor"
+        app:layout_constraintVertical_bias="0.764"
+        app:srcCompat="@drawable/cuadrado_radius" />
+
+    <Button
+        android:id="@+id/buttonBuscarEnviosRepartidor"
+        android:layout_width="99dp"
+        android:layout_height="45dp"
+        android:background="#90C3DA"
+        android:backgroundTint="#90C3DA"
+        android:fontFamily="@font/montserrat_medium"
+        android:foregroundTint="#040101"
+        android:onClick="buscarEnviosCliente"
+        android:text="Buscar"
+        android:textColor="#000000"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <TextView
+        android:id="@+id/textViewClienteRepartidor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="ID - Cliente"
+        android:textColor="#F6F5F5"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSoporteAdminMain2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="376dp"
+        android:layout_height="372dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFondo10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFondo10"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFondo10"
+        app:layout_constraintVertical_bias="0.131">
+
+        <LinearLayout
+            android:id="@+id/layoutEnviosRepartidor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/editTextClienteRepartidor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#F6F2F2"
+        android:textColorHint="#F6F4F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Búsqueda por ID del cliente"
+        android:textColor="#F6F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

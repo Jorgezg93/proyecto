@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90C3DA"
+    tools:context=".Admin.RepartidoresAdminCrear">
+
+    <ImageView
+        android:id="@+id/imageViewFondo2"
+        android:layout_width="379dp"
+        android:layout_height="560dp"
+        android:background="#3F6381"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEnvioTituloNuevo2"
+        app:layout_constraintVertical_bias="0.605"
+        app:srcCompat="@drawable/cuadrado_radius" />
+
+    <Button
+        android:id="@+id/buttonRegistro2"
+        android:layout_width="161dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#90C3DA"
+        android:fontFamily="@font/montserrat_medium"
+        android:foregroundTint="#040101"
+        android:onClick="completarRegistro"
+        android:text="Registrar Repartidor"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNuevoReparContrasena" />
+
+    <Button
+        android:id="@+id/buttonCancelarNuevoEnvio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="#90C3DA"
+        android:fontFamily="@font/montserrat_medium"
+        android:foregroundTint="#040101"
+        android:onClick="cancelar"
+        android:text="Cancelar"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toEndOf="@+id/buttonRegistro2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNuevoReparContrasena" />
+
+    <TextView
+        android:id="@+id/textViewNuevoReparContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Contraseña"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFondo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNuevoReparEmail"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <EditText
+        android:id="@+id/editTextNuevoReparNombre"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="56dp"
+        android:background="#90C3DA"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNuevoEnvioEmpresa2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFondo2" />
+
+    <TextView
+        android:id="@+id/textViewNuevoReparApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Apellidos"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNuevoEnvioEmpresa2" />
+
+    <EditText
+        android:id="@+id/editTextNuevoReparApellidos"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:background="#90C3DA"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNuevoReparApellidos"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNuevoReparNombre" />
+
+    <TextView
+        android:id="@+id/textViewNuevoReparDni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Dni"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNuevoReparApellidos" />
+
+    <EditText
+        android:id="@+id/editTextNuevoRepartidorDni"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="24dp"
+        android:background="#90C3DA"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNuevoReparDni"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNuevoReparApellidos" />
+
+    <TextView
+        android:id="@+id/textViewNuevoReparTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Telefono"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNuevoReparDni" />
+
+    <TextView
+        android:id="@+id/textViewNuevoReparEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Email"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNuevoReparTelefono" />
+
+    <EditText
+        android:id="@+id/editTextNuevoReparTelefono"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:background="#90C3DA"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:inputType="phone"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNuevoReparTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNuevoRepartidorDni" />
+
+    <TextView
+        android:id="@+id/textViewNuevoEnvioEmpresa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Nombre"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFondo2" />
+
+    <TextView
+        android:id="@+id/textViewEnvioTituloNuevo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Nuevo Repartidor"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNuevoReparEmail"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:background="#90C3DA"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/textViewNuevoReparEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNuevoReparTelefono" />
+
+    <EditText
+        android:id="@+id/editTextNuevoReparContrasena"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#90C3DA"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/textViewNuevoReparContrasena"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNuevoReparEmail" />
+</androidx.constraintlayout.widget.ConstraintLayout>

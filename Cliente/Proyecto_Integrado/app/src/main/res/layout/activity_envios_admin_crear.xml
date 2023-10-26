@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90C3DA"
+    tools:context=".Admin.EnviosAdminCrear">
+
+    <ImageView
+        android:id="@+id/imageViewFondo19"
+        android:layout_width="383dp"
+        android:layout_height="556dp"
+        android:background="#3F6381"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEnvioTituloNuevo"
+        app:layout_constraintVertical_bias="0.605"
+        app:srcCompat="@drawable/cuadrado_radius" />
+
+    <Button
+        android:id="@+id/buttonRegistro3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#90C3DA"
+        android:fontFamily="@font/montserrat_medium"
+        android:foregroundTint="#040101"
+        android:onClick="completarRegistro"
+        android:text="Crear Envío"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNuevoEnvioDestino" />
+
+    <Button
+        android:id="@+id/buttonCancelarNuevoEnvio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#90C3DA"
+        android:fontFamily="@font/montserrat_medium"
+        android:foregroundTint="#040101"
+        android:onClick="cancelar"
+        android:text="Cancelar"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNuevoEnvioDestino" />
+
+    <TextView
+        android:id="@+id/textViewNuevoEnvioDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Destino"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegistro3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNuevoEnvioOrigen"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <EditText
+        android:id="@+id/editTextNuevoEnvioDestino"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:background="#90C3DA"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:inputType="text"
+        android:textColor="#050505"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFondo19"
+        app:layout_constraintStart_toEndOf="@+id/textViewNuevoEnvioDestino"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNuevoEnvioOrigen"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewNuevoEnvioOrigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Origen"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNuevoEnvioEntrega" />
+
+    <EditText
+        android:id="@+id/editTextNuevoEnvioOrigen"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="24dp"
+        android:background="#90C3DA"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:inputType="text"
+        android:textColor="#050505"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNuevoEnvioOrigen"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNuevoEnvioEntrega" />
+
+    <TextView
+        android:id="@+id/textViewNuevoEnvioEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Entrega"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNuevoEnvioEmpresa" />
+
+    <EditText
+        android:id="@+id/editTextNuevoEnvioRepartidor"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:background="#90C3DA"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:inputType="text"
+        android:textColor="#050505"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNuevoEnvioRepartidor"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNuevoEnvioCliente" />
+
+    <TextView
+        android:id="@+id/textViewNuevoEnvioRepartidor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Repartidor"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNuevoEnvioCliente" />
+
+    <TextView
+        android:id="@+id/textViewNuevoEnvioCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="304dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Cliente"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFondo19" />
+
+    <EditText
+        android:id="@+id/editTextNuevoEnvioCliente"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:background="#90C3DA"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:inputType="text"
+        android:textColor="#050505"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNuevoEnvioCliente"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFondo19" />
+
+    <TextView
+        android:id="@+id/textViewNuevoEnvioEmpresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Empresa"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNuevoEnvioRepartidor" />
+
+    <TextView
+        android:id="@+id/textViewEnvioTituloNuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Nuevo Envio:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <EditText
+        android:id="@+id/editTextNuevoEnvioEntrega"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:background="#90C3DA"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:inputType="date"
+        android:textColor="#050505"
+        app:layout_constraintStart_toEndOf="@+id/textViewNuevoEnvioEntrega"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNuevoEnvioEmpresa" />
+
+    <EditText
+        android:id="@+id/editTextNuevoEnvioEmpresa"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:background="#90C3DA"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_medium"
+        android:inputType="text"
+        android:textColor="#050505"
+        app:layout_constraintStart_toEndOf="@+id/textViewNuevoEnvioEmpresa"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNuevoEnvioRepartidor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

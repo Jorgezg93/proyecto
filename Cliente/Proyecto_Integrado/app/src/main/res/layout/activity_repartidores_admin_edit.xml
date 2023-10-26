@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90C3DA"
+    tools:context=".Admin.RepartidoresAdminEdit">
+
+    <ImageView
+        android:id="@+id/imageViewFondo7"
+        android:layout_width="380dp"
+        android:layout_height="517dp"
+        android:background="#3F6381"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepartidorAdminTitulo"
+        app:layout_constraintVertical_bias="0.151"
+        app:srcCompat="@drawable/cuadrado_radius" />
+
+    <Button
+        android:id="@+id/buttonCancelar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#90C3DA"
+        android:fontFamily="@font/montserrat_medium"
+        android:foregroundTint="#040101"
+        android:onClick="Volver"
+        android:text="Volver"
+        android:textColor="#000000"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFondo7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUbicacionAdminRepar"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <Button
+        android:id="@+id/buttonCancelar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#90C3DA"
+        android:fontFamily="@font/montserrat_medium"
+        android:foregroundTint="#040101"
+        android:onClick="eliminarRepartidor"
+        android:text="Eliminar"
+        android:textColor="#000000"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFondo7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUbicacionAdminRepar"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <TextView
+        android:id="@+id/textViewUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Ubicación"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDniRepar" />
+
+    <TextView
+        android:id="@+id/textViewDniRepar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Dni"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailRepar" />
+
+    <TextView
+        android:id="@+id/textViewEmailRepar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Email"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTelefonoRepar" />
+
+    <TextView
+        android:id="@+id/textViewApellidosRepar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Apellidos"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombreReparAdmin" />
+
+    <TextView
+        android:id="@+id/textViewNombreReparAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Nombre"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIdReparAdmin" />
+
+    <TextView
+        android:id="@+id/textViewIdReparAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="ID"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFondo7" />
+
+    <TextView
+        android:id="@+id/textViewTelefonoRepar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Teléfono"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewApellidosRepar" />
+
+    <TextView
+        android:id="@+id/textViewRepartidorAdminTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="96dp"
+        android:background="#90C3DA"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Repartidor:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewIdAdminRepar"
+        android:layout_width="257dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewIdReparAdmin"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFondo7" />
+
+    <TextView
+        android:id="@+id/textViewNombreAdminRepar"
+        android:layout_width="257dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNombreReparAdmin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIdAdminRepar" />
+
+    <TextView
+        android:id="@+id/textViewApellidosAdminRepar"
+        android:layout_width="257dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewApellidosRepar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombreAdminRepar" />
+
+    <TextView
+        android:id="@+id/textViewTelefonoAdminRepar"
+        android:layout_width="257dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewTelefonoRepar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewApellidosAdminRepar" />
+
+    <TextView
+        android:id="@+id/textViewEmailAdminRepar"
+        android:layout_width="257dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewEmailRepar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTelefonoAdminRepar" />
+
+    <TextView
+        android:id="@+id/textViewDniAdminRepar"
+        android:layout_width="257dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewDniRepar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailAdminRepar" />
+
+    <TextView
+        android:id="@+id/textViewUbicacionAdminRepar"
+        android:layout_width="257dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:background="#3F6381"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:textColor="#F6F2F2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewUbicacion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDniAdminRepar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

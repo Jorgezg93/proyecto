@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Proyecto_Integrado</string>
+    <string name="add_label">add_label</string>
+    <string name="add_category">add_category</string>
+    <string name="search">search</string>
+    <string name="settings">settings</string>
+</resources>

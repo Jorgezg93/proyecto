@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90C3DA"
+    tools:context=".Cliente.EnviosCliente">
+
+    <ImageView
+        android:id="@+id/imageViewFondo14"
+        android:layout_width="392dp"
+        android:layout_height="657dp"
+        android:layout_marginTop="16dp"
+        android:background="#3F6381"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerEnvioCliente"
+        app:srcCompat="@drawable/cuadrado_radius" />
+
+    <TextView
+        android:id="@+id/textViewTepartidorEnvioCliente"
+        android:layout_width="238dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="#F4F0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toEndOf="@+id/textViewTelefonoRepartidorCliente"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIdEnvioClienteLocalizacion" />
+
+    <TextView
+        android:id="@+id/textViewEstadoCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="308dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Estado"
+        android:textColor="#F4F0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTelefonoRepartidorCliente" />
+
+    <TextView
+        android:id="@+id/textViewTelefonoRepartidorCliente"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="276dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Telefono Repartidor"
+        android:textColor="#F4F0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIdEnvioCliente" />
+
+    <TextView
+        android:id="@+id/textViewIdEnvioCliente"
+        android:layout_width="34dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="324dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="ID"
+        android:textColor="#F4F0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFondo14" />
+
+    <Spinner
+        android:id="@+id/spinnerEnvioCliente"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textViewTituloEnviosCliente"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloEnvios" />
+
+    <TextView
+        android:id="@+id/textViewTituloEnviosCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="320dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Envio"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloEnvios" />
+
+    <TextView
+        android:id="@+id/textViewEstadoEnvioCliente"
+        android:layout_width="238dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="#F4F0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/textViewEstadoCliente"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTepartidorEnvioCliente" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="381dp"
+        android:layout_height="341dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstadoEnvioCliente"
+        app:layout_constraintVertical_bias="0.331"
+        tools:context="com.dam.proyecto_integrado.Cliente.EnviosCliente" />
+
+    <TextView
+        android:id="@+id/textViewIdEnvioClienteLocalizacion"
+        android:layout_width="238dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="#F4F0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toEndOf="@+id/textViewIdEnvioCliente"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFondo14" />
+
+    <TextView
+        android:id="@+id/textViewTituloEnvios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Localización de mis envíos"
+        android:textColor="#040202"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
